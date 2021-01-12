@@ -5,14 +5,12 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.test.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.rule.ActivityTestRule;
 
 import com.huzulmez.doordashlite.R;
 import com.huzulmez.doordashlite.model.data.Store;
-import com.huzulmez.doordashlite.view.adapters.StoreAdapter;
 
 import org.junit.Assert;
 import org.junit.Before;

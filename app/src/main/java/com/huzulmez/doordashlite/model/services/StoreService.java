@@ -28,7 +28,7 @@ public class StoreService {
     }
 
     public interface StoreApi{
-        @GET("v1/store_feed/?lat=37.422740&lng=-122.139956&offset=100&limit=50")
+        @GET("v1/store_feed/?lat=37.422740&lng=-122.139956&offset=0&limit=50")
         Call<StoreResponse> getAllStores();
     }
 

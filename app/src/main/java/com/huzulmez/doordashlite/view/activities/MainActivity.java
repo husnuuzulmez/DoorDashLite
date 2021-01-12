@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements StoreAdapter.Stor
         DetailActivity.start(this,store);
     }
 
-    public class StoreObserver implements Observer<List<Store>> {
+    private class StoreObserver implements Observer<List<Store>> {
         @Override
         public void onChanged(List<Store> stores) {
             if (stores!=null){
