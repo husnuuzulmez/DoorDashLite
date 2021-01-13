@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.huzulmez.doordashlite.model.services.StoreService;
 
-public  class MainViewModelFactory implements ViewModelProvider.Factory {
+public class MainViewModelFactory implements ViewModelProvider.Factory {
 
     private StoreService mStoreService;
 

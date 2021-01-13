@@ -29,9 +29,8 @@ public class MainViewModel extends ViewModel {
         return stores;
     }
 
-    public void loadStores() throws IOException {
+    public void loadStores(){
         Call<StoreResponse> call =  mStoreService.getStoreApi().getAllStores();
-//         Response<StoreResponse> response = call.execute();
         call.enqueue(new StoreCallBack());
     }
 

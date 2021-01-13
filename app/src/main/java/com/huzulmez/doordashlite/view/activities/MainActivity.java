@@ -37,11 +37,7 @@ public class MainActivity extends AppCompatActivity implements StoreAdapter.Stor
         MainViewModelFactory factory = new MainViewModelFactory(StoreService.getInstance());
         mViewModel = ViewModelProviders.of(this  , factory).get(MainViewModel.class);
         mViewModel.getStores().observe(this,new StoreObserver());
-        try {
-            mViewModel.loadStores();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        mViewModel.loadStores();
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext()));
         adapter = new StoreAdapter(this);
